@@ -1,8 +1,9 @@
 package application_test
 
 import (
-	"github/LeonardoBatistaCarias/go-hexagonal/application"
 	"testing"
+
+	"github.com/LeonardoBatistaCarias/fc2-hexagonal-architecture/application"
 
 	uuid "github.com/satori/go.uuid"
 
