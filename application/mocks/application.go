@@ -172,33 +172,33 @@ func (mr *MockProductServiceInterfaceMockRecorder) Create(name, price interface{
 }
 
 // Disable mocks base method.
-func (m *MockProductServiceInterface) Disable(product application.ProductInterface, price float64) (application.ProductInterface, error) {
+func (m *MockProductServiceInterface) Disable(product application.ProductInterface) (application.ProductInterface, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "Disable", product, price)
+	ret := m.ctrl.Call(m, "Disable", product)
 	ret0, _ := ret[0].(application.ProductInterface)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
 // Disable indicates an expected call of Disable.
-func (mr *MockProductServiceInterfaceMockRecorder) Disable(product, price interface{}) *gomock.Call {
+func (mr *MockProductServiceInterfaceMockRecorder) Disable(product interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Disable", reflect.TypeOf((*MockProductServiceInterface)(nil).Disable), product, price)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Disable", reflect.TypeOf((*MockProductServiceInterface)(nil).Disable), product)
 }
 
 // Enable mocks base method.
-func (m *MockProductServiceInterface) Enable(product application.ProductInterface, price float64) (application.ProductInterface, error) {
+func (m *MockProductServiceInterface) Enable(product application.ProductInterface) (application.ProductInterface, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "Enable", product, price)
+	ret := m.ctrl.Call(m, "Enable", product)
 	ret0, _ := ret[0].(application.ProductInterface)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
 // Enable indicates an expected call of Enable.
-func (mr *MockProductServiceInterfaceMockRecorder) Enable(product, price interface{}) *gomock.Call {
+func (mr *MockProductServiceInterfaceMockRecorder) Enable(product interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Enable", reflect.TypeOf((*MockProductServiceInterface)(nil).Enable), product, price)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Enable", reflect.TypeOf((*MockProductServiceInterface)(nil).Enable), product)
 }
 
 // Get mocks base method.
